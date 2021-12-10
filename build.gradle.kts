@@ -8,7 +8,7 @@ repositories {
 
 tasks {
     sourceSets {
-        main {
+        test {
             java.srcDirs("src")
         }
     }
@@ -16,4 +16,8 @@ tasks {
     wrapper {
         gradleVersion = "7.3"
     }
+}
+
+dependencies {
+    implementation("junit:junit:4.13")
 }
